@@ -258,7 +258,7 @@ p{
 	background-image: url('../images/bgpurpose.jpg');
 	border-left: solid #fff;
 	border-top: solid 100px transparent;
-	margin-right: 100px;
+	/* margin-right: 100px; */
 	border-radius: 10%;
 	/* height: 300px; */
 }

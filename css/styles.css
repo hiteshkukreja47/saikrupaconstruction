@@ -1,0 +1,656 @@
+/**************************************************************************************
+
+                    PROJECT NAME    :   WHITE GRAPHICS
+
+                            DEFAULT VALUES
+
+                    FONT            :   Roboto Condensed
+                    Medium Turqoise :   #34C6D3 (Buttons,Icons,Lines,&Bg)
+                    Steel Grey      :   #41464B (Headings)
+                    Blue Bayounx    :   #64707B (Paragraphs)
+                    White           :   #FFF    (Text with dark backgrounds)
+                    Black           :   #000
+
+**************************************************************************************/
+
+/**************************************************************************************
+                            GENERAL CSS SECTION
+**************************************************************************************/
+html,
+body{
+    height:100%;
+}
+
+body{
+    font-family:'Roboto Condensed',sans-serif;
+}
+
+h3{
+	text-transform: uppercase;
+	color:#41464B;
+	font-weight: 700;
+	
+}
+p{
+	color:#64707B;
+	font-weight: 500;
+}
+
+/**************************************************************************************
+                            BUTTON SECTION GENERIC
+**************************************************************************************/
+
+.btn-general{
+    border: solid 2px #fff;
+    border-radius: 0;
+    padding: 12px 26px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.btn-blue{
+    border-color: #34C6	D3;
+    color: #34C6D3;
+}
+
+.btn-blue:hover,
+.btn-blue:focus{
+    background: #34C6D3;
+    color: white;
+    border-color: #34C6D3;
+    border: solid 2px #34C6D3;
+}
+
+.btn-white{
+    border-color: #fff;
+    color:#fff;
+}
+
+.btn-white:hover,
+.btn-white:focus{
+    background: #fff;
+    color: #41464B;
+    border-color: #fff;
+    border: solid 2px #fff;
+}
+
+
+/**************************************************************************************
+                            BACKGROUND PARALLAX SECTION
+**************************************************************************************/
+
+.bg-parallax{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+}
+
+/**************************************************************************************
+                            HOME SECTION CSS
+**************************************************************************************/
+
+#home{
+    height: 100%;
+}
+
+.home-cover{
+    background-image: url('../images/bg-home.jpg');
+    height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home-content-box{
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+
+.home-content-box-inner{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;/*This could have been done using bootstrap text-center class*/
+}
+
+.home-cover h2{
+    color:#fff;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 100px;
+    text-transform: uppercase;
+    text-align:left;
+	
+	
+}
+
+.home-btn{
+    text-align: left;
+    margin-left: 37px;
+    border-radius: 10;
+    padding: 12px 26px;
+    text-transform: uppercase;
+	font-weight: bolder;
+    font-size: 16px;
+    border-color: #fff;
+    color:#fff;
+}
+
+
+
+/**************************************************************************************
+                            HOME SECTION ANIMATION
+**************************************************************************************/
+
+.home-cover,
+.home-heading,
+.home-btn{
+    animation-duration: .5s;
+}
+
+.home-cover{
+    animation-delay: .1s;
+}
+
+.home-heading{
+    animation-delay: .5s;
+}
+
+.home-btn{
+    animation-delay: .7s;
+}
+
+/**************************************************************************************
+                            CONTENT BOX SECTION
+**************************************************************************************/
+
+.content-box{
+	padding: 60px 0;
+}
+
+.content-title h3{
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	margin: 0 0 30px;
+}
+
+.content-title-underline{
+	width: 30px;
+	height: 2px;
+	margin: 0 auto 30px;
+	background: #34C6D3;
+}
+
+.content-title-white{
+	color:#fff;
+}
+/**************************************************************************************
+                            SERVICES SECTION CSS
+**************************************************************************************/
+
+.service-item{
+	margin: 0 0 20px;
+	padding: 20px 0;
+/*	cursor: pointer;*/
+}
+
+.service-item-icon i{
+	float: left;
+	color: #34C6D3;
+	padding: 15px;
+	margin-right: 25px;
+	width: 75px;
+	height: 75px;
+	text-align: center;
+}
+.service-item:hover .service-item-icon i{
+	color:#fff;
+	background: #34C6D3;
+}
+
+.service-item-title h3{
+	font-size: 20px;
+	font-weight: 400;
+	margin: 0 0 10px;
+	text-transform: uppercase;
+}
+
+.service-item-desc p{
+	margin: 0;
+	padding-left: 100px;
+}
+
+/**************************************************************************************
+                            ABOUT US SECTION CSS
+***************************************************************************************/
+#about .content-box{
+	float:left;
+	height:500px;
+}
+
+.content-box-outer{
+	display: table;
+	width:100%;
+	height: 100%;
+}
+
+.content-box-inner{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.about-desc{
+	margin-bottom: 30px;
+}
+
+.about-btn{
+	text-align: center;
+}
+
+.about-bg-diagonal{
+	width: 50%;
+	float: right;
+	height: 500px;
+	background-image: url('../images/bgpurpose.jpg');
+	border-left: solid #fff;
+	border-top: solid 100px transparent;
+	margin-right: 100px;
+	border-radius: 10%;
+	/* height: 300px; */
+}
+.philosophy{
+    text-align: center;
+	color: #000;
+    text-transform: uppercase;
+    font-weight:bolder;
+    margin-top: 20px;
+}
+/**************************************************************************************
+                            OUR WORK SECTION CSS
+**************************************************************************************/
+
+.row.no-gutters [class*=col-]{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.img-wrapper{
+	overflow: hidden;
+}
+
+.img-wrapper img{
+	transition: transform .5s ease;
+}
+
+.img-wrapper img:hover{
+	transform: scale(1.5);
+	cursor: zoom-in;
+}
+
+
+/**************************************************************************************
+                            OUR TEAM SECTION
+**************************************************************************************/
+
+.team-member{
+	margin: 0 15px;
+	
+}
+
+.team-member-info{
+	padding: 10px 0 30px 0;
+	text-align: center;
+}
+
+h4.team-member-name{
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	padding-top: 2px;
+}
+h4.team-member-designation{
+	color: #34C6D3;
+	font-size:16px;
+	font-style: italic;
+	letter-spacing: 1px;
+	padding-top: 5px;
+	font-weight: 700;
+}
+.img-circle{
+	margin: auto;
+	border-radius: 30%;
+	height: 300px;
+}
+
+/**************************************************************************************
+                            SOCIAL LIST SECTION
+**************************************************************************************/
+
+.social-list{
+	padding-left: 0;
+}
+
+.social-list li{
+	list-style: none;
+	display: inline-block;
+	width:32px;
+	height: 32px;
+	margin-right: 6px;
+	margin-top: 10px;
+}
+
+.social-icon i{
+	font-size: 16px;
+}
+
+.icon-white{
+	color: #fff;
+}
+
+.icon-gray{
+	color: #64707B;
+}
+
+.icon-white:hover,
+.icon-gray:hover{
+	color: #34C6D3;
+}
+
+/**************************************************************************************
+                            CUSTOMERS SECTION
+**************************************************************************************/
+.testimonials-cover{
+	background-image: url('../images/bg-testimonials.jpg');
+}
+
+.customers-testimonials{
+	padding: 50px 0;
+}
+
+.testimonial img{
+	max-width: 120px;
+	margin: 0 auto;
+}
+
+.testimonial blockquote{
+	border:0;
+	font-family: Georgia,Times,serif;
+	font-style: italic;
+	padding: 10px 150px;
+	color: #fff;
+	margin: 0 auto;
+	position: relative;
+}
+
+.testimonial p{
+	color: #fff;
+}
+
+.testimonial blockquote p{
+	margin: 10px auto;	
+}
+
+.testimonial blockquote:before,
+.testimonial blockquote:after{
+	font-size: 80px;
+	font-style: normal;
+	line-height: 1;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+}
+
+.testimonial blockquote:before{
+	content: "\201C";
+	top: 0;
+	left: 100px;
+}
+
+.testimonial blockquote:after{
+	content: "\201D";
+	bottom: 0;
+	right: 100px;
+}
+
+.testimonial-author p strong{
+	display: block;
+}
+
+/**************************************************************************************
+                            VALUES SECTION
+**************************************************************************************/
+
+.value-box{
+    padding: 50px 0;
+    border: solid 3px #34C6D3;
+    text-align: center;
+    margin: 30px 0;
+}
+h4.value-title{
+    background-color: #34C6D3;
+    display: inline-block;
+    color: #fff;
+    padding: 7px 15px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 30px;
+}
+.value-box-lg{
+padding: 80px 0;
+margin: 0;
+background-color: #34C6D3;
+border:solid 3px #34C6D3;
+}
+.value-title-lg{
+	background-color: #fff;
+    display: inline-block;
+    color: #34C6D3;
+    padding: 7px 15px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 30px;
+}
+.lg-p{
+	color: #fff;
+}
+.valueSectionUnder{
+	width: 70%;
+	height: 5px;
+	margin: 0 auto 30px;
+	background: #34C6D3;
+}
+
+/**************************************************************************************
+                            STATS SECTION
+**************************************************************************************/
+.stats-cover{
+	background-image: url("../images/bg-stats.jpg");
+}
+
+.stats-cover .content-box{
+	background-color: rgba(0,0,0,0.6);
+}
+
+.stats-item{
+	padding: 100px 0;
+}
+
+.stats-item i{
+	color: #34C6D3;
+}
+
+.stats-item h2{
+	color: #fff;
+	font-size: 35px;
+	font-weight: 700;
+	margin-top: 15px;
+	margin-bottom: 1px;
+}
+
+.stats-item p{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-top: 0;
+}
+
+/****************************************************************************************
+							FOOTER SECTION
+****************************************************************************************/
+footer{
+    background-color: #41464B;
+    padding-top: 30px;
+    border-top: 5px olid rgba(0,0,0,0.1);
+}
+.contact-left h3,
+.contact-right h3{
+    font-size: 26px;
+    color: #fff;
+    font-weight: 700;
+}
+.contact-left p{
+    color: #fff;
+    margin-bottom: 30px;
+}
+.contact-info{
+    background: url('../images/world-map.png') no-repeat;
+    background-size: contain;
+}
+address strong{
+    color: #fff;
+    font-size: 16px;
+}
+footer{
+    letter-spacing: 1px;
+}
+
+form .form-control{
+    background: transparent;
+    border-radius: 0;
+    border-color: #fff;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    font-weight: 300;
+}
+
+.footer-bottom{
+    background: rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+    margin-top: 60px;
+}
+.footer-copyrights p{
+    color: #fff;
+}
+.footer-menu{
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+}
+.footer-menu ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.footer-menu ul li{
+    display: inline-block;
+}
+.footer-menu a{
+    color: #fff;
+    padding-right: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 300;
+}
+.footer-menu a:hover{
+    color: #34C6D3;
+}
+.btn-back-to-top{
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	padding: 10px 15px;
+}
+
+
+/****************************************************************************************
+							NAVBAR/HEADER SECTION
+****************************************************************************************/
+
+.navbar{
+	padding: 10px 0;
+	transition: all 0.5s ease-in-out;
+	border: none;
+}
+
+.wg-top-nav{
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.wg-nav-wrapper{
+	padding: 0 50px;
+}
+
+.navbar-brand{
+	color: #fff;
+	font-size: 26px;
+}
+
+.navbar-brand:hover{
+	color: #fff;
+}
+
+#wg-menu{
+	float: right;
+}
+
+.navbar-nav>li>a{
+	color:#fff;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+
+.navbar-nav>li>a:focus,
+.navbar-nav>li>a:hover{
+	background: none;
+	color: #34C6D3;
+}
+
+.navbar-toggle{
+	background-color: rgba(0, 0, 0, 0,5);
+	border: solid 1px #fff;
+	border-radius: 0;
+}
+
+.navbar-toggle .icon-bar{
+	background-color: #fff;
+}
+
+.navbar-collapse{
+	max-height: none!important;
+	float: right;
+}
+
+.navbar ul.navbar-nav>li.active>a{
+	color: #34c6d3;
+}
+
+.imgskc{
+	height: 30px;
+	width: 240px;
+}
+.skcp{
+    padding-left: 50px;
+    font-size: 15px;
+    color: #fff;
+}

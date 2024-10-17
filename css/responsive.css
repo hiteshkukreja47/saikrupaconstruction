@@ -1,7 +1,7 @@
-/*LARGE DEVICES*/
+LARGE DEVICES
 
 @media(min-width: 1200px){
-    /*	This is working fine*/
+    	This is working fine
     }
     
     @media(min-width:1199px) and (max-width:992px){
@@ -50,7 +50,10 @@
         }
     }
     /*FOR SMALLER DEVICES()*/
-    @media(max-width: 767px){
+     @media(max-width: 767px){
+        .imgskc{
+            width: 170px;
+        }
         #wg-menu{
             float: left;
         }
@@ -98,4 +101,6 @@
         .btn-back-to-top{
             padding: 5px 10px;
         }
-    }
+    } 
+
+

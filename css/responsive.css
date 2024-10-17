@@ -73,7 +73,9 @@ LARGE DEVICES
             width: 100%;
             height: 350px;
         }
-        
+        .bg-parallax{
+            background-attachment: scroll;
+        }
         #about .content-box{
             height: 350px;
         }

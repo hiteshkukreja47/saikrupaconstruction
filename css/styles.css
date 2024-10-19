@@ -73,7 +73,14 @@ p{
     border-color: #fff;
     border: solid 2px #fff;
 }
-
+.send-btn:hover,
+.send-btn:focus
+{
+	color: #000;
+	background:#fff;
+    border-color: #fff;
+    border: solid 2px #fff;
+}
 
 /**************************************************************************************
                             BACKGROUND PARALLAX SECTION
@@ -653,4 +660,9 @@ form .form-control{
     padding-left: 50px;
     font-size: 15px;
     color: #fff;
+}
+#msg{
+	margin-top: 20px;
+	display: block;
+	color: #fff;
 }

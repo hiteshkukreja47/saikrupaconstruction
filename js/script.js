@@ -94,3 +94,20 @@ $(function () {
 		},1250, "easeInOutExpo");
 	});
 });
+const scriptURL = 'https://script.google.com/macros/s/AKfycbx6ednQE5TQY8bGllx5_1ZnuQMUiOmv-kked2Bk9mOdeX3Z3onq8Oyk-jTVhftwHLhyvQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+        msg.innerHTML = "Hey,Your Message has been sent successfully."
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()       
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+
